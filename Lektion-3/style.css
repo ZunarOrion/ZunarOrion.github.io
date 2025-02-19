@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url("/Lektion-3/Fog-bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.23);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Grechen Fuemen";
+    margin-left: 1em;
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.6;
+    font-family: "Roboto";
+    margin-left: 1em;
+}
+
+ul{
+    line-height: 1.6;
+    margin-left: 1em;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.bg-test{
+    border: 1px solid #333;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.rgba{
+    background: rgba(255, 87, 51, 0.5);
+}
+
+.hex{
+    background-color: #fc0202;
+}
+
+.hsl{
+    background: hsl(240, 100%, 50%);
+}
+
+.linear-gradiant{
+    background: linear-gradient(90deg,#000, #fff, #555);
+}
+
+.radial-gradiant{
+    background: radial-gradient(#000, #fff);
+}
