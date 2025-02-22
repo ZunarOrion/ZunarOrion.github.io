@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lektion-5/style.css">
+    <title>Formulärtest</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Forms!</h1>
+    </header>
+
+    <form action="/login" method="post">
+        <h2>Logga in</h2>
+        <div>
+            <label for="username">Användarnamn: </label>
+            <input type="text" name="username" id="username">
+        </div>
+
+        <div>
+            <label for="password">Lösenord: </label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <button type="submit">Logga in</button>
+    </form>
+
+    <hr>
+
+
+    <form action="/contact" method="post">
+        <h2>Kontakta oss</h2>
+        <div>
+            <label for="name">Namn: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <div>
+            <label for="email">Mailadress: </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="message">Meddelande: </label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+
+        <div>
+            <label for="content-type">Typ av ärende: </label>
+            <select name="content-type" id="content-type">
+                <option value="laggin">Det laggar</option>
+                <option value="improvements">Förbättringsförslag</option>
+                <option value="panic">Akut panik</option>
+            </select>
+        </div>
+
+        <button type="submit">Skicka</button>
+    </form>
+
+    <hr>
+
+
+
+    <form action="/test" method="get">
+        <h2>Testformulär</h2>
+        <div>
+            <label for="age">Ålder: </label>
+            <input type="number" name="age" id="age" min="15" max="25">
+        </div>
+
+        <div>
+            <label for="tel">Telefonnummer: </label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+
+        <div>
+            <label for="date">Datum: </label>
+            <input type="date" name="date" id="date">
+        </div>
+
+        <div>
+            <label for="checkbox">Godkänner du: </label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+        </div>
+
+        <div>
+            <label for="radio">Behöver du hjälp?: </label>
+            <input type="radio" name="radio" id="radio">
+        </div>
+
+        <div>
+            <label for="file">Infoga en fil: </label>
+            <input type="file" name="file" id="file">
+        </div>
+
+        <button type="reset">Återställ</button>
+        <input type="hidden" name="hidden-value" value="SECRET SECRET">
+        <button type="submit">Skicka in</button>
+        <button type="button" onclick="alert('... och gör mig till kung')">Ta mig till havet...</button>
+
+    </form>
+
+
+</body>
+
+</html>
+
+<!--<h1>Övning del 1</h1>
+
+    <h2>Gör ett inlogg</h2>
+    <form action="/test" method="get">
+
+        <div>
+            <label for="username">Användarnamn: </label>
+            <input type="text" name="username" id="username" maxlength="15">
+            <span class="validation-icon"></span>
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+            <span class="validation-icon"></span>
+        </div>
+
+        <div>
+            <label for="age">Ålder: </label>
+            <input type="number" name="age" id="age" min="18" max="99">
+            <span class="validation-icon"></span>
+        </div>
+
+        <div>
+            <label for="password">Lösenord: </label>
+            <input type="password" name="password" id="password" minlength="8" required>
+            <span class="validation-icon"></span>
+        </div>
+
+        
+    </form>-->

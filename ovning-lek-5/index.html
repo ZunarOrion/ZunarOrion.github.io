@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ovning-lek-5/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Övning del 1&2</h1>
+    </header>
+
+    <form action="/test" method="get">
+        <h2>Inloggning</h2>
+
+        <div>
+            <label for="role">Användartyp: </label>
+            <select name="role" id="role">
+                <option value="admin">Administrator</option>
+                <option value="owner">Ägare</option>
+                <option value="user">Användare</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="username">Användarnamn: </label>
+            <input type="text" name="username" id="username" maxlength="15">
+            <span class="validation-icon"></span>
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+            <span class="validation-icon"></span>
+        </div>
+
+        <div>
+            <label for="age">Ålder: </label>
+            <input type="number" name="age" id="age" min="18" max="99">
+            <span class="validation-icon"></span>
+        </div>
+
+        <div>
+            <label for="password">Lösenord: </label>
+            <input type="password" name="password" id="password" minlength="8" required>
+            <span class="validation-icon"></span>
+        </div>
+
+        <div>
+            <label for="personal-kode">Personlig Kod: </label>
+            <textarea name="personal-kode" id="personal-kode"></textarea>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
