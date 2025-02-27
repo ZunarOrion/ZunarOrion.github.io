@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/** General **/
+h1 {
+    font-family: Indie Flower;
+    text-align: center;
+    padding: 1rem;
+    letter-spacing: 0.2;
+    font-size: 3rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/** Search form **/
+form#search-form {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0.4rem;
+    justify-content: center;
+}
+
+input#search-query {
+    border-radius: 1000px;
+    width: 100%;
+    max-width: 768px;
+    margin: 0.8rem 1.6rem 0;
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 3.5rem;
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    color: black;
+    letter-spacing: 0.05rem;
+}
+
+input#search-query::placeholder {
+    color: black;
+    font-family: FontAwesome, Roboto;
+}
+
+
+/** Main Navigation **/
+nav#main-navigation {
+    box-shadow: rgb(0 0 0 / 8%) 0 6px 6px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+nav#main-navigation ul {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav#main-navigation li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+
+/** Objects **/
+
+#objects {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+.object {
+    padding: 1rem;
+
+}
+
+.object>img {
+    border-radius: 1rem;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/** Media queries **/
+@media (min-width: 768px) {
+    #objects {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        max-width: 1600px;
+        /* limit the container width */
+        margin: 0 auto;
+        /* center the container */
+    }
+}
