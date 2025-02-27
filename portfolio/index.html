@@ -1,36 +1,66 @@
 <!DOCTYPE html>
-<html lang="en, sv">
+<html lang="sv, en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/portfolio/style.css">
+    <script src="https://kit.fontawesome.com/58707be7dd.js" crossorigin="anonymous"></script>
     <title>Välkommen till min Portfolio</title>
 </head>
+
 <body>
     <header>
-        <div class="logo">R.Strångerts Portfolio</div>
+        <h1 class="logo">R.Strångerts Portfolio</h1>
+
+        <ul class="nav-burger" id="nav-burger">
+            <li><a href="#about">Om mig</a></li>
+            <li><a href="/portfolio/mina-projekt.html">Mina projekt</a></li>
+            <li><a href="/portfolio/mina-skills.html">Mina Färdigheter</a></li>
+
+            <a class="close" href="#"></a>
+        </ul>
+        <a class="hamburger" href="#nav-burger"></a>
+
         <nav class="navbar">
             <a href="#about">Om mig</a>
-            <a href="#projects">Mina projekt</a>
-            <a href="#skills">Mina Färdigheter</a>
+            <a href="/portfolio/mina-projekt.html">Mina projekt</a>
+            <a href="/portfolio/mina-skills.html">Mina Färdigheter</a>
         </nav>
     </header>
 
-    <section class="hero" id="home">
+    <main class="hero">
         <div class="content">
             <h1>Rasmus Strångerts Portfolio</h1>
             <p>Välkommen till min portfolio hemsida.</p>
         </div>
-    </section>
+    </main>
 
-    <div class="container">
+    <main class="container">
 
-        <h2>Om mig</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Nisi maxime veritatis voluptates corrupti reiciendis dicta 
-        eligendi repellendus facere est amet.</p>
+        <h2 id="about">Om Mig</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nisi maxime veritatis voluptates corrupti reiciendis dicta
+            eligendi repellendus facere est amet.</p>
 
+        <h2 id="projects">Mina Projekt</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Sequi incidunt molestias quas nemo sunt facilis corporis
+            ullam quod, enim sapiente!</p>
 
+        <h2 id="skills">Mina Färdigheter</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quae eum velit qui nulla tenetur totam debitis facilis
+            labore ratione earum!</p>
+        </main>
+
+    <div class="contact">
+        <p>Kontakta mig på <i class="fa-solid fa-envelope"></i> email@email.com, 
+            <i class="fa-solid fa-phone"></i>123-456 78 90 eller 
+            <i class="fa-solid fa-circle-user"></i>LinkedIn</p>
     </div>
+
+    <footer>&copy;Rasmus Strångert 2025</footer>
 </body>
+
 </html>
