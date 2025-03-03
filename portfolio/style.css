@@ -237,6 +237,11 @@ header li a:hover, li a:focus {
     text-align: center;
 }
 
+.contact h3 {
+    font-size: 1.2rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 footer {
     background: #333;
     color: #fff;
@@ -246,6 +251,16 @@ footer {
 }
 
 /** --- Media Tags --- **/
+@media(min-width: 350px){
+    .navbar {
+        display: none;
+    }
+    header .logo {
+        font-size: 1.5rem;
+    }
+}
+
+
 @media(min-width: 390px){
     /* body{
         background: rgba(255, 0, 0, 0.3);
@@ -266,6 +281,10 @@ footer {
     /* body{
         background: rgba(0, 255, 0, 0.3);
     } */
+    .hero {
+        margin-bottom: 0.2rem;
+    }
+
     nav a {
         margin: 0 15px;
         font-size: 1rem;
