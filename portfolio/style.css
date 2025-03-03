@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -38,7 +38,8 @@ a {
 }
 
 /** --- Navigation --- **/
-.hamburger, .close {
+.hamburger,
+.close {
     border: none;
     cursor: pointer;
     position: absolute;
@@ -58,7 +59,8 @@ a {
     background: url(ham-open.jpeg) center/cover no-repeat;
 }
 
-.hamburger img, .close img {
+.hamburger img,
+.close img {
     width: 100%;
     height: 100%;
 }
@@ -100,7 +102,8 @@ header li a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header li a:hover, li a:focus {
+header li a:hover,
+li a:focus {
     background-color: rgba(128, 128, 128, 0.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transform: scale(1.2);
@@ -179,7 +182,7 @@ header li a:hover, li a:focus {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.project h3 { 
+.project h3 {
     margin-bottom: 15px;
     font-size: 1.5rem;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -242,6 +245,11 @@ header li a:hover, li a:focus {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.contact li {
+    list-style: none;
+    text-align: left;
+}
+
 footer {
     background: #333;
     color: #fff;
@@ -251,36 +259,36 @@ footer {
 }
 
 /** --- Media Tags --- **/
-@media(min-width: 350px){
+@media(min-width: 340px) {
     .navbar {
         display: none;
     }
+
     header .logo {
         font-size: 1.5rem;
     }
-}
 
-
-@media(min-width: 390px){
-    /* body{
-        background: rgba(255, 0, 0, 0.3);
-    } */
-    .navbar {
+    #contact-big {
         display: none;
     }
 }
 
-@media(min-width: 768px){
-    /* body{
-        background: rgba(255, 255, 0, 0.3);
-    } */
-    
+
+@media(min-width: 390px) {
+    .navbar {
+        display: none;
+    }
+
+    #contact-big {
+        display: none;
+    }
 }
 
-@media(min-width: 1024px){
-    /* body{
-        background: rgba(0, 255, 0, 0.3);
-    } */
+@media(min-width: 768px) {
+    /*  */
+}
+
+@media(min-width: 1024px) {
     .hero {
         margin-bottom: 0.2rem;
     }
@@ -302,14 +310,22 @@ footer {
     }
 
     .navbar {
-        display:flex;
+        display: flex;
     }
 
-    .navbar a:hover{
+    .navbar a:hover {
         background-color: rgba(128, 128, 128, 0.1);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
         transform: scale(1.2);
+    }
+
+    #contact-small {
+        display: none;
+    }
+
+    #contact-big {
+        display: block;
     }
 }
