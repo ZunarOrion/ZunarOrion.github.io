@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong{
+    font-family: Sigmar;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Layout --- */
+body{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-image: url("/lektion-8/images/baker-crop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100dvh;
+}
+
+nav{
+    background-color: deepskyblue;
+}
+
+main{
+    background-color: gold;
+}
+
+footer{
+    background-color: greenyellow;
+}
+
