@@ -8,6 +8,7 @@
 /** --- General --- **/
 body {
     line-height: 1.6;
+    letter-spacing: 0.2px;
     color: #333;
     background-color: #fff;
     height: 100dvh;
@@ -51,19 +52,19 @@ a {
 
 .hamburger {
     background: white;
-    background: url(ham.jpeg) center/cover no-repeat;
+    background: url(/portfolio/images/ham.jpeg) center/cover no-repeat;
 }
 
 .close {
     background: #f9f9f9;
-    background: url(ham-open.jpeg) center/cover no-repeat;
+    background: url(/portfolio/images/ham-open.jpeg) center/cover no-repeat;
 }
 
-.hamburger img,
+/* .hamburger img,
 .close img {
     width: 100%;
     height: 100%;
-}
+} */
 
 .nav-burger {
     position: fixed;
@@ -89,16 +90,13 @@ a {
 
 header li a {
     display: block;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #333;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-decoration: none;
     flex: 1 1 300px;
     background: #ffffff;
-    padding-bottom: 0.5rem;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -111,7 +109,7 @@ li a:focus {
 
 /** --- Hero Section --- **/
 .hero {
-    background: url(hero-bg.jpg) center/cover no-repeat;
+    background: url(/portfolio/images/hero-bg.jpg) center/cover no-repeat;
     min-height: 83vh;
     display: flex;
     align-items: center;
@@ -128,7 +126,7 @@ li a:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .hero .content {
@@ -163,8 +161,9 @@ li a:focus {
 
 #all-projects h2 {
     text-align: center;
+    font-size: 2rem;
     margin-bottom: 40px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .projects {
@@ -172,6 +171,13 @@ li a:focus {
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 60px;
+}
+
+.projects img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
 
 .project {
@@ -194,17 +200,13 @@ li a:focus {
     margin-bottom: 20px;
 }
 
-.projects img {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-}
+
 
 #all-skills h2 {
     text-align: center;
+    font-size: 2rem;
     margin-bottom: 40px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .skills {
@@ -319,6 +321,10 @@ footer {
         text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
         transform: scale(1.2);
+    }
+
+    .contact a {
+        padding: 0 10px 0 0;
     }
 
     #contact-small {
