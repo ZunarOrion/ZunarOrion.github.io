@@ -122,7 +122,7 @@ li a:focus {
 }
 
 #to-top:hover {
-    background-color: rgba(128, 128, 128, 0.1);
+    background-color: rgb(0, 135, 202);
 }
 
 /** --- Hero Section --- **/
@@ -366,7 +366,6 @@ footer {
         transform: scaleX(1);
         transform-origin: center;
     }
-
 
 
     .contact a {
