@@ -50,16 +50,17 @@ a {
     height: 36px;
 }
 
+/* Det är olika två olika färger i menyn och utanför, 
+där av två selektorer som ser ut att göra samma sak */
 .hamburger {
-    background: white;
     background: url(/portfolio/images/ham.jpeg) center/cover no-repeat;
 }
 
 .close {
-    background: #f9f9f9;
     background: url(/portfolio/images/ham-open.jpeg) center/cover no-repeat;
 }
 
+/*  */
 .nav-burger {
     position: fixed;
     z-index: 1000;
@@ -104,7 +105,7 @@ li a:focus {
 /** --- Hero Section --- **/
 .hero {
     background: url(/portfolio/images/hero-bg.jpg) center/cover no-repeat;
-    min-height: 83vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,6 +154,8 @@ li a:focus {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+
+
 #all-projects h2 {
     text-align: center;
     font-size: 2rem;
@@ -192,6 +195,7 @@ li a:focus {
     font-size: 1rem;
     color: #666;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 
@@ -229,6 +233,8 @@ li a:focus {
     color: #666;
 }
 
+
+
 .contact {
     max-width: 1200px;
     margin: 40px auto;
@@ -244,6 +250,7 @@ li a:focus {
 .contact li {
     list-style: none;
     text-align: left;
+    padding: 10px 0 0 0;
 }
 
 footer {
@@ -254,7 +261,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/** --- Media Tags --- **/
+/** --- Media Querys --- **/
 @media(min-width: 340px) {
     .navbar {
         display: none;
@@ -306,15 +313,30 @@ footer {
     }
 
     .navbar {
-        display: flex;
+        display: inline-block;
+        position: relative;
     }
 
-    .navbar a:hover {
-        background-color: rgba(128, 128, 128, 0.1);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
-        border-radius: 12px;
-        transform: scale(1.2);
+    .navbar a{
+        position: relative;
+    }
+
+    .navbar a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: center;
+        transition: transform 0.25s ease-out;
+    }
+
+    .navbar a:hover::after {
+        transform: scaleX(1);
+        transform-origin: center;
     }
 
     .contact a {

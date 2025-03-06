@@ -1,0 +1,17 @@
+$background: red;
+
+body{
+    background-color: $background;
+}
+
+nav{
+    background: red;
+
+    ul{
+        list-style: none;
+
+        li{
+            padding: 1rem;
+        }
+    }
+}
