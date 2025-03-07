@@ -16,6 +16,11 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /** --- Header --- **/
 header {
     background: #fff;
@@ -31,11 +36,6 @@ header .logo {
     font-weight: bold;
     color: #333;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 /** --- Navigation --- **/
@@ -368,6 +368,14 @@ footer {
     }
 
 
+    .container {
+        max-width: 1200px;
+        margin: 40px 300px;
+        padding: 0 20px;
+        flex-grow: 1;
+    }
+
+
     .contact a {
         padding: 0 5px 0 5px;
     }
@@ -380,10 +388,12 @@ footer {
     #contact-big {
         display: inline-block;
         position: relative;
+        margin-top: 10px;
     }
 
     #contact-big a{
         position: relative;
+        
     }
 
     #contact-big a::after {
