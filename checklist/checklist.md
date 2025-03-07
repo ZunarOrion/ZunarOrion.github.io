@@ -47,9 +47,9 @@
 - [x] Webbplatsen innehåller minst tre exempel på projekt (kan vara kod, skoluppgifter, hobbyprojekt).  
 - [x] Webbplatsen innehåller kontaktinformation eller ett kontaktformulär.  
 - [x] Alla bilder, länkar och knappar fungerar korrekt.  
-- [ ] Webbplatsen har inga stavfel eller trasiga länkar.  
+- [x] Webbplatsen har inga stavfel eller trasiga länkar.  
 
 ## **🔔 Inlämning**
 
-- [ ] Länk till GitHub-repositoryt är bifogad i inlämningen.  
-- [ ] Länk till den publicerade portfolion på GitHub Pages är bifogad i inlämningen.  
+- [x] Länk till GitHub-repositoryt är bifogad i inlämningen.  
+- [x] Länk till den publicerade portfolion på GitHub Pages är bifogad i inlämningen.  
